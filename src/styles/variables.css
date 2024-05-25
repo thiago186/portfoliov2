@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #000000; /* Substitua pelo valor correto do Figma */
+    --secondary-color: #FFFF00; /* Substitua pelo valor correto do Figma */
+    --font-family: 'Arial, sans-serif'; /* Substitua pela fonte correta do Figma */
+  }
+  
+  body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+  }

@@ -1,0 +1,38 @@
+/* src/components/navbar.css */
+.navbar {
+  display: flex;
+  width: 476px;
+  height: 80px;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  padding: 8px 16px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link img {
+  margin-right: 8px;
+}
+
+.navbar-link:hover {
+  color: var(--secondary-color);
+}
