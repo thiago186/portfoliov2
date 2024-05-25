@@ -1,32 +1,66 @@
+
+.align-navbar-container {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
 .navbar-container { 
   display: flex;
   width: 476px;
   height: 80px;
   padding: 0px 16px;
   align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
   flex-shrink: 0;
   border-radius: 8px;
   background: var(--M3-sys-light-surface-container, #F1EDEB);
-  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+
+/* M3/Elevation Light/3 */
+box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
 }
 
 .navbar-container a {
-  text-decoration: none; /* Add this line to remove the underline from links */
-  color: inherit; /* Ensure the text color is inherited */
+  text-decoration: none;
+  color: inherit;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.segment1{
+.segment1 {
   display: flex;
-  width: 5.8125rem;
-  padding: 0.75rem 0rem 1rem 0rem;
+  width: 93px;
+  padding: 12px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.25rem;
-  flex-shrink: 0;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.segment1.selected {
+  background: var(--M3-sys-light-secondary-container, #313131);
+}
+
+.segment1:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.navbutton-label {
+  color: var(--M3-sys-light-on-surface, #1C1B1B);
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.5px;
 }

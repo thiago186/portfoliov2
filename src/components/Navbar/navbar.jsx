@@ -7,22 +7,24 @@ import NavButton from '../NavButton/NavButton';
 
 const Navbar = () => {
   return (
-    <div className='navbar-container'>
-      <div className='segment1'>
+    <div className='align-navbar-container'>
+      <div className='navbar-container'>
         <Link to='/'>
           <NavButton label='Home' icon='src/assets/icons/home.svg' selected={true} />
         </Link>
+
+        <Link to='/about'>
+          <NavButton label='About' icon='src/assets/icons/profile.svg' selected={false} />
+        </Link>
+
+        <Link to='/projects'>
+          <NavButton label='Projects' icon='src/assets/icons/folder.svg' selected={false} />
+        </Link>
+
+        <Link to='/contact'>
+          <NavButton label='Contact' icon='src/assets/icons/mail_outline.svg' selected={false} />
+        </Link>
       </div>
-      
-      <Link to='/about'>
-        <NavButton label='About' icon='src/assets/icons/profile.svg' selected={false} />
-      <Link to='/projects'>
-        <NavButton label='Projects' icon='src/assets/icons/folder.svg' selected={false} />
-      </Link>
-      </Link>
-      <Link to='/contact'>
-        <NavButton label='Contact' icon='src/assets/icons/mail_outline.svg' selected={false} />
-      </Link>
     </div>
   )
 }
