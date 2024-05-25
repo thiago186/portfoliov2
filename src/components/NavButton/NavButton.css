@@ -59,3 +59,10 @@
   align-items: center;
   flex-shrink: 0;
 }
+
+@media (max-width: 768px) {
+  .navbutton-container {
+    width: 15vw;
+    gap: 20px;
+  }
+}

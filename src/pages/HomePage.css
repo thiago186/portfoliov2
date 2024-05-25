@@ -1,0 +1,156 @@
+/* src/pages/Home.css */
+.home-container {
+    width: 1512px;
+    height: 982px;
+    position: fixed;
+    background: #FCF9F7;
+    overflow: hidden;
+}
+
+.home-content-container {
+    position: fixed;
+    left: 10vw;
+    bottom: 30vh;
+    background-color: #FCF9F7;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.intro-text {
+    width: 353px;
+}
+
+.intro-text-normal {
+    color: #1C1B1B;
+    font-size: 57px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+.intro-text-highlight {
+    color: #C3D000;
+    font-size: 57px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+.subtitle {
+    left: 168px;
+    top: 613px;
+    color: black;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin-top: 16px;
+}
+
+.hline {
+    position: fixed;
+    height: 0.125rem;
+    width: 100vw;
+    background: #1C1B1B;
+}
+
+.vline {
+    position: fixed;
+    height: 100vh;
+    width: 0.125rem;
+    background: #1C1B1B;
+}
+
+
+.hline1 {
+    margin-top: 10vh;
+}
+
+.hline2 {
+    margin-top: 20vh;
+}
+
+.hline3 {
+    margin-top: 30vh;
+}
+
+.vline1 {
+    right: 10vh;
+    /* Position the line to the right */
+}
+
+.vline2 {
+    right: 20vh;
+}
+
+.vline3 {
+    right: 30vh;
+}
+
+
+@media (max-width: 768px) {
+    .hline {
+        position: fixed;
+        height: 0.125rem;
+        width: 100vw;
+        /* background: #e80000; */
+    }
+    
+    .vline {
+        position: fixed;
+        height: 100vh;
+        width: 0.125rem;
+        /* background: #e80000; */
+    }
+
+    .vline1 {
+        right: 5vh;
+    }
+
+    .vline2 {
+        right: 10vh;
+    }
+
+    .vline3 {
+        right: 15vh;
+    }
+
+    .hline1 {
+        margin-top: 5vh;
+    }
+
+    .hline2 {
+        margin-top: 10vh;
+    }
+
+    .hline3 {
+        margin-top: 15vh;
+    }
+
+    .intro-text-normal {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .intro-text-highlight {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .home-content-container{
+        width: 53vw;
+    }
+
+    .home-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
