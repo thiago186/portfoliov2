@@ -3,38 +3,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './navbar.css';
+import NavButton from '../NavButton/NavButton';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
-        <li className="navbar-item">
-          <Link to="/" className="navbar-link">
-            <img src="src/assets/icons/home.svg" alt="Home" />
-            Home
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/profile" className="navbar-link">
-            <img src="/src/assets/icons/profile.svg"alt="Profile" />
-            Profile
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/projects" className="navbar-link">
-            <img src="/src/assets/icons/folder.svg" alt="Projects" />
-            Projects
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/contact" className="navbar-link">
-            <img src="//src/assets/icons/mail_outline.svg" alt="Contact Me" />
-            Contact Me
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+    <div className='navbar-container'>
+      <div className='segment1'>
+        <Link to='/'>
+          <NavButton label='Home' icon='src/assets/icons/home.svg' selected={true} />
+        </Link>
+      </div>
+      
+      <Link to='/about'>
+        <NavButton label='About' icon='src/assets/icons/profile.svg' selected={false} />
+      <Link to='/projects'>
+        <NavButton label='Projects' icon='src/assets/icons/folder.svg' selected={false} />
+      </Link>
+      </Link>
+      <Link to='/contact'>
+        <NavButton label='Contact' icon='src/assets/icons/mail_outline.svg' selected={false} />
+      </Link>
+    </div>
+  )
+}
 
 export default Navbar;

@@ -8,15 +8,13 @@ import Navbar from './components/Navbar/navbar';
 const App = () => {
   return (
     <div className="App">
-      <div className='icon-container'>
-        <IconContainer label='Teste' icon='src/assets/icons/home.svg' selected={false} />
-        <a>testeee</a>
+      <div>
+        <p>App</p>
+        <p>Esse é meu app</p>
       </div>
-      {/* <div className='navbar-page-container'>
+      <div className='navbar-page-container'>
         <Navbar />
-      </div> */}
-      <a>test</a>
-      <Outlet />
+      </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
-/* src/components/navbar.css */
-.navbar {
+.navbar-container { 
   display: flex;
   width: 476px;
   height: 80px;
@@ -7,32 +6,27 @@
   align-items: flex-start;
   gap: 24px;
   flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--M3-sys-light-surface-container, #F1EDEB);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
 }
 
-.navbar-list {
-  list-style: none;
+.navbar-container a {
+  text-decoration: none; /* Add this line to remove the underline from links */
+  color: inherit; /* Ensure the text color is inherited */
   display: flex;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-item {
-  padding: 8px 16px;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.navbar-link img {
-  margin-right: 8px;
-}
-
-.navbar-link:hover {
-  color: var(--secondary-color);
+.segment1{
+  display: flex;
+  width: 5.8125rem;
+  padding: 0.75rem 0rem 1rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
 }

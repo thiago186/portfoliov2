@@ -7,6 +7,7 @@
   align-items: center;
   gap: 4px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -27,7 +28,6 @@
   padding: 4px 20px;
   justify-content: center;
   align-items: center;
-  
 }
 
 .selected {
@@ -45,6 +45,7 @@
   font-weight: 700;
   line-height: 16px; /* 133.333% */
   letter-spacing: 0.5px;
+  text-decoration: none; /* Add this line to remove the underline */
 }
 
 .svg-navicon { 
