@@ -13,7 +13,7 @@ import './styles/global.css';
 import './styles/variables.css';
 
 const Main = () => (
-  <Router basename='/portfoliov2/'>
+  <Router basename='/'>
     <Routes>
       <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<Home />} />
