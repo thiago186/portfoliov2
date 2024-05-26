@@ -6,6 +6,11 @@ import { useLocation } from 'react-router-dom';
 import './navbar.css';
 import NavButton from '../NavButton/NavButton';
 
+import homeIcon from '../../assets/icons/home.svg';
+import profileIcon from '../../assets/icons/profile.svg';
+import projectsIcon from '../../assets/icons/folder.svg';
+import contactIcon from '../../assets/icons/mail_outline.svg';
+
 const Navbar = () => {
 const location = useLocation();
 
@@ -13,19 +18,19 @@ const location = useLocation();
     <div className='align-navbar-container'>
       <div className='navbar-container'>
         <Link to='/'>
-          <NavButton label='Home' icon='src/assets/icons/home.svg' selected={location.pathname === '/home'} />
+          <NavButton label='Home' icon={homeIcon} selected={location.pathname === '/home'} />
         </Link>
 
         <Link to='/about'>
-          <NavButton label='About' icon='src/assets/icons/profile.svg' selected={location.pathname === '/profile'} />
+          <NavButton label='About' icon={profileIcon} selected={location.pathname === '/profile'} />
         </Link>
 
         <Link to='/projects'>
-          <NavButton label='Projects' icon='src/assets/icons/folder.svg' selected={location.pathname === '/projects'} />
+          <NavButton label='Projects' icon={projectsIcon} selected={location.pathname === '/projects'} />
         </Link>
 
         <Link to='/contact'>
-          <NavButton label='Contact' icon='src/assets/icons/mail_outline.svg' selected={location.pathname === '/contact-me'} />
+          <NavButton label='Contact' icon={contactIcon} selected={location.pathname === '/contact-me'} />
         </Link>
       </div>
     </div>

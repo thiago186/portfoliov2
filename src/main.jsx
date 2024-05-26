@@ -13,7 +13,7 @@ import './styles/global.css';
 import './styles/variables.css';
 
 const Main = () => (
-  <Router>
+  <Router basename='/portfoliov2/'>
     <Routes>
       <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<Home />} />
@@ -30,3 +30,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Main />
   </React.StrictMode>
 );
+
