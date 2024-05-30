@@ -50,14 +50,14 @@
     margin-top: 16px;
 }
 
-.hline {
+.hphline {
     position: fixed;
     height: 0.125rem;
     width: 100vw;
     background: #1C1B1B;
 }
 
-.vline {
+.hpvline {
     position: fixed;
     height: 100vh;
     width: 0.125rem;
@@ -65,68 +65,68 @@
 }
 
 
-.hline1 {
+.hphline1 {
     margin-top: 10vh;
 }
 
-.hline2 {
+.hphline2 {
     margin-top: 20vh;
 }
 
-.hline3 {
+.hphline3 {
     margin-top: 30vh;
 }
 
-.vline1 {
+.hpvline1 {
     right: 10vh;
     /* Position the line to the right */
 }
 
-.vline2 {
+.hpvline2 {
     right: 20vh;
 }
 
-.vline3 {
+.hpvline3 {
     right: 30vh;
 }
 
 
 @media (max-width: 768px) {
-    .hline {
+    .hphline {
         position: fixed;
         height: 0.125rem;
         width: 100vw;
         /* background: #e80000; */
     }
     
-    .vline {
+    .hpvline {
         position: fixed;
         height: 100vh;
         width: 0.125rem;
         /* background: #e80000; */
     }
 
-    .vline1 {
+    .hpvline1 {
         right: 5vh;
     }
 
-    .vline2 {
+    .hpvline2 {
         right: 10vh;
     }
 
-    .vline3 {
+    .hpvline3 {
         right: 15vh;
     }
 
-    .hline1 {
+    .hphline1 {
         margin-top: 5vh;
     }
 
-    .hline2 {
+    .hphline2 {
         margin-top: 10vh;
     }
 
-    .hline3 {
+    .hphline3 {
         margin-top: 15vh;
     }
 

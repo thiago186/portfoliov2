@@ -9,12 +9,12 @@ const Home = () => {
   return (
     <div className="home-container">
       < Navbar />
-      <div className="hline hline1" />
-      <div className="hline hline2" />
-      <div className="hline hline3" />
-      <div className="vline vline1" />
-      <div className="vline vline2" />
-      <div className="vline vline3" />
+      <div className="hphline hphline1" />
+      <div className="hphline hphline2" />
+      <div className="hphline hphline3" />
+      <div className="hpvline hpvline1" />
+      <div className="hpvline hpvline2" />
+      <div className="hpvline hpvline3" />
       <div className="home-content-container">
         <div className="intro-text">
           <span className="intro-text-normal">Hello,<br />I am </span>

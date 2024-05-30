@@ -21,15 +21,15 @@ const location = useLocation();
           <NavButton label='Home' icon={homeIcon} selected={location.pathname === '/home'} />
         </Link>
 
-        <Link to='/about'>
-          <NavButton label='About' icon={profileIcon} selected={location.pathname === '/profile'} />
+        <Link to='/about-me'>
+          <NavButton label='About' icon={profileIcon} selected={location.pathname === '/about-me'} />
         </Link>
 
         <Link to='/projects'>
           <NavButton label='Projects' icon={projectsIcon} selected={location.pathname === '/projects'} />
         </Link>
 
-        <Link to='/contact'>
+        <Link to='/contact-me'>
           <NavButton label='Contact' icon={contactIcon} selected={location.pathname === '/contact-me'} />
         </Link>
       </div>
