@@ -9,7 +9,7 @@ import Projects from './pages/Projects';
 import ContactMe from './pages/AboutMePage';
 import NotFound from './pages/NotFound';
 
-// import './styles/global.css';
+import './styles/global.css';
 // import './styles/variables.css';
 
 const Main = () => (

@@ -1,0 +1,24 @@
+.experience-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    padding: 5px 16px;
+    z-index: 10;
+    border-radius: 8px;
+    background: var(--M3-sys-light-surface-container-low, #F7F3F1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.experience-tag-content {
+    color: var(--M3-sys-light-on-surface, #1C1B1B);
+    text-align: center;
+    
+    /* M3/label/large */
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.1px;
+}

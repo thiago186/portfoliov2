@@ -1,8 +1,7 @@
 .title-container {
     display: block;
     padding: 6px 1px;
-    /* margin-top: 80px;
-    margin-left:72px; */
+    z-index: 50;
     margin-bottom: 40px;
     max-width: 200px;
     justify-content: center;
@@ -13,14 +12,12 @@
 }
 
 .title-content {
+    z-index: 50;
     color: var(--M3-sys-light-on-surface, #1C1B1B);
     text-align: center;
-
-    /* M3/display/small */
     font-family: "Times New Roman";
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
-    /* 122.222% */
 }

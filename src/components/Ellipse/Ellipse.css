@@ -1,0 +1,8 @@
+.ellipse{
+    z-index: 30;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: var(--M3-sys-light-tertiary-fixed-dim, #C3D000);
+    filter: blur(7.849999904632568px);
+}

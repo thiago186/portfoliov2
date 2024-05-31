@@ -1,18 +1,16 @@
 .aboutme-page-container {
-    width: 100%;
-    max-width: 1512px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0 10px;
+    width: 1512px;
+    height: 982px;
+    margin-top: 0px;
+    ;
     background: #FCF9F7;
-    position: relative
 }
 
 .amhline {
     position: fixed;
     top: 0;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     background: #1C1B1B;
 }
 
@@ -38,34 +36,31 @@
 }
 
 .aboutme-card-container {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 80px;
+    margin-left: 10vw;
     background: var(--M3-sys-light-surface, #FCF9F7);
-    width: 90%;
-    z-index: 10;
 }
 
 .aboutme-card {
     display: flex;
-    flex-direction: row;
     position: relative;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 80vw;
+    height: 60vh;
+    z-index: 10;
     border-radius: 12px;
     background: var(--M3-sys-light-surface-container-low, #F7F3F1);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    z-index: 50;
 }
 
 .aboutme-image {
-    width: 100%;
-    max-width: 332px;
-    z-index: 50;
-    height: auto;
-    margin-left: 0;
+    width: 332px;
+    z-index: 10;
+    height: 443px;
+    /* max-height: 100%; */
+    margin-left: 100px;
     flex-shrink: 0;
     border-radius: 16px;
     background: rgb(36, 166, 40) 50% / cover no-repeat;
@@ -75,13 +70,15 @@
 .aboutme-card-content {
     z-index: 10;
     flex: 1;
-    margin: 20px;
+    margin-left: 20px;
     max-height: 100%;
 }
 
 .aboutme-card-text {
     color: var(--M3-sys-light-on-surface, #1C1B1B);
     text-align: center;
+
+    /* M3/display/small */
     font-family: "Times New Roman";
     font-size: 18px;
     text-align: justify;
@@ -90,92 +87,103 @@
     font-weight: 400;
     line-height: 30px;
     word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.experiences-section-container {
-    margin-top: 98px;
-    margin-left: auto;
-    margin-right: auto;
-    background: var(--M3-sys-light-surface, #FCF9F7);
-    width: 90%;
-    z-index: 10;
 }
 
 .experiences-container {
     display: flex;
     flex-direction: column;
-    gap: 103px;
+    margin-top: 80px;
+    margin-left: 10vw;
+    background: var(--M3-sys-light-surface, #FCF9F7);
+    z-index: 10;
 }
+
 
 .single-experience-container {
     display: flex;
+    width: 100%;
+    max-width: 1336px;
+    z-index: 10;
     align-items: flex-start;
-    flex-direction: row;
     gap: 40px;
+    padding: 0 2px;
+    margin-bottom: 103px;
+}
+
+.about-experience-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .about-experience-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.about-experience-text-content {
-    z-index: 30;
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: flex-start;
+    flex: 1 0 0;
 }
 
 .experience-title {
     color: #000;
     text-align: center;
-    background: #FCF9F7;
+    margin-bottom: 0;
 
     font-family: "Times New Roman";
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    /* 127.273% */
 }
+
+
+/* .ellipse-connection-line {
+    position: absolute;
+    left: calc(10vw + 35px);
+    z-index: 11;
+    transform: translateX(-50%);
+    top: 92.60vh;
+    width: 0.125rem;
+    background: #f60000;
+    height: calc(100vh - 50%);
+} */
 
 .experience-period {
     color: #000;
-    background: #FCF9F7;
-
+    margin-top: 0;
+    /* M3/body/small */
     font-family: Helvetica;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 16px; /* 133.333% */
     letter-spacing: 0.4px;
 }
 
 .experience-description {
     align-self: stretch;
     color: #000;
-    background: #FCF9F7;
-
+    margin-top: 0;
+    /* M3/body/medium */
     font-family: Helvetica;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 20px; /* 142.857% */
     letter-spacing: 0.25px;
 }
 
-.experience-field-container{
+.experience-field-container {
+    z-index: 10;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
     align-self: stretch;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .last-element {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
