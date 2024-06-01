@@ -9,11 +9,11 @@
 }
 
 .amhline {
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    position: absolute;
+    height: 0.125rem;
+    left:0;
     width: 100%;
-    background: #1C1B1B;
+    background: #C7C7BF;
 }
 
 .amvline {
@@ -35,6 +35,18 @@
 
 .amvline3 {
     right: 30vh;
+}
+
+.amhline1 {
+    margin-top: -15vw;
+}
+
+.amhline2 {
+    margin-top: -10vw;
+}
+
+.amhline3 {
+    margin-top: -5vw;
 }
 
 .aboutme-card-container {
@@ -95,6 +107,7 @@
 
 .experiences-section-container {
     margin-top: 98px;
+    margin-bottom:98px;
     margin-left: auto;
     margin-right: auto;
     background: var(--M3-sys-light-surface, #FCF9F7);
@@ -131,7 +144,7 @@
 
 .experience-title {
     color: #000;
-    text-align: center;
+    text-align:start;
     background: #FCF9F7;
 
     font-family: "Times New Roman";
@@ -174,6 +187,37 @@
     align-self: stretch;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.skills-section-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 98px;
+    margin-bottom: 98px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--M3-sys-light-surface, #FCF9F7);
+    width: 90%;
+    z-index: 50;
+}
+
+.skills-grid {
+    display: grid;
+    max-width: 80%;
+    margin-left:10%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
+}
+
+
+
+@media (min-width: 800px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr); /* Máximo de 4 colunas em telas maiores */
+    }
 }
 
 .last-element {

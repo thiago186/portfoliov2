@@ -5,8 +5,17 @@ import Navbar from '../components/Navbar/navbar';
 import Title from '../components/Title/Title';
 import Ellipse from '../components/Ellipse/Ellipse';
 import ExperienceTag from '../components/ExperienceTag/ExperienceTag';
+import SkillCard from '../components/SkillCard/SkillCard';
 
 import aboutMeImg from '../assets/aboutme-img.png';
+import pythonIcon from '../assets/skillsIcons/python.png';
+import javascriptIcon from '../assets/skillsIcons/javascript.png';
+import nodejsIcon from '../assets/skillsIcons/nodejs.png';
+import githubIcon from '../assets/skillsIcons/github.png';
+import htmlIcon from '../assets/skillsIcons/html.png';
+import gitIcon from '../assets/skillsIcons/git.png';
+import cssIcon from '../assets/skillsIcons/css.png';
+import redisIcon from '../assets/skillsIcons/redis.png';
 
 import './AboutMePage.css';
 
@@ -23,11 +32,13 @@ const AboutMePage = () => {
 
 
   return (
+    <>
     <div className='aboutme-page-container'>
       <Navbar />
       <div className='amvline amvline1' />
       <div className='amvline amvline2' />
       <div className='amvline amvline3' />
+
       <div className='aboutme-card-container'>
         <Title content='About Me' />
 
@@ -80,7 +91,7 @@ const AboutMePage = () => {
             </div>
           </div>
 
-          <div className="single-experience-container last-element">
+          <div className="single-experience-container">
             <Ellipse />
             {/* <div className="ellipse-connection-line enabled" /> */}
             <div className='about-experience-container'>
@@ -102,9 +113,24 @@ const AboutMePage = () => {
         </div>
       </div>
 
-      {/* <div className="last-element">2024</div> */}
+      <div className="skills-section-container last-element">
+        <Title content="Skills"/>
+        <div className="skills-grid">
+          <SkillCard skillName="Python" skillIcon={pythonIcon}/>
+          <SkillCard skillName="Javascript" skillIcon={javascriptIcon}/>
+          <SkillCard skillName="Node.js" skillIcon={nodejsIcon}/>
+          <SkillCard skillName="Github" skillIcon={githubIcon}/>
+          <SkillCard skillName="HTML" skillIcon={htmlIcon}/>
+          <SkillCard skillName="Git" skillIcon={gitIcon}/>
+          <SkillCard skillName="CSS" skillIcon={cssIcon}/>
+          <SkillCard skillName="REDIS" skillIcon={redisIcon} className="last-row-skill"/>
+        </div>
+      </div>
     </div>
-
+    <div className='amhline amhline1' />
+    <div className='amhline amhline2' />
+    <div className='amhline amhline3' />
+    </>
   );
 };
 
