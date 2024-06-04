@@ -47,3 +47,20 @@
     line-height: 31.257px;
     /* 125% */
 }
+
+
+@media (max-width: 800px) {
+    .skill-card-container {
+        width: 90px;
+        height: 130px;
+        margin: 8px;
+    }
+
+    .skill-icon {
+        scale: 0.8;
+    }
+
+    .skill-name {
+        margin-bottom: 18px;
+    }
+}

@@ -11,7 +11,7 @@
 .amhline {
     position: absolute;
     height: 0.125rem;
-    left:0;
+    left: 0;
     width: 100%;
     background: #C7C7BF;
 }
@@ -66,6 +66,7 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
+    gap: 24px;
     background: var(--M3-sys-light-surface-container-low, #F7F3F1);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
     padding: 20px;
@@ -80,7 +81,6 @@
     margin-left: 0;
     flex-shrink: 0;
     border-radius: 16px;
-    background: rgb(36, 166, 40) 50% / cover no-repeat;
     object-fit: cover;
 }
 
@@ -107,7 +107,7 @@
 
 .experiences-section-container {
     margin-top: 98px;
-    margin-bottom:98px;
+    margin-bottom: 98px;
     margin-left: auto;
     margin-right: auto;
     background: var(--M3-sys-light-surface, #FCF9F7);
@@ -144,7 +144,7 @@
 
 .experience-title {
     color: #000;
-    text-align:start;
+    text-align: start;
     background: #FCF9F7;
 
     font-family: "Times New Roman";
@@ -180,7 +180,7 @@
     letter-spacing: 0.25px;
 }
 
-.experience-field-container{
+.experience-field-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -205,7 +205,7 @@
 .skills-grid {
     display: grid;
     max-width: 80%;
-    margin-left:10%;
+    margin-left: 10%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
@@ -216,8 +216,67 @@
 
 @media (min-width: 800px) {
     .skills-grid {
-        grid-template-columns: repeat(4, 1fr); /* Máximo de 4 colunas em telas maiores */
+        grid-template-columns: repeat(4, 1fr);
     }
+}
+
+@media (max-width: 800px) {
+    .aboutme-page-container {
+        max-width: 95%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutme-card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 4px;
+        align-items: center;
+        max-width: 85%;
+        height: auto;
+        border-radius: 12px;
+        background: var(--M3-sys-light-surface-container-low, #F7F3F1);
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        z-index: 50;
+    }
+
+    .amvline1 {
+        right: 2vh;
+    }
+    
+    .amvline2 {
+        right: 6vh;
+    }
+    
+    .amvline3 {
+        right: 10vh;
+    }
+    
+    .amhline1 {
+        margin-top: -40vw;
+    }
+    
+    .amhline2 {
+        margin-top: -30vw;
+    }
+    
+    .amhline3 {
+        margin-top: -20vw;
+    }
+    
+    .aboutme-card-content {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .aboutme-card-text {
+        line-height: 24px;
+    }
+
 }
 
 .last-element {

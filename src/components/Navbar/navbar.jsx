@@ -6,10 +6,10 @@ import { useLocation } from 'react-router-dom';
 import './navbar.css';
 import NavButton from '../NavButton/NavButton';
 
-import homeIcon from '../../assets/icons/home.svg';
-import profileIcon from '../../assets/icons/profile.svg';
-import projectsIcon from '../../assets/icons/folder.svg';
-import contactIcon from '../../assets/icons/mail_outline.svg';
+import homeIcon from '/icons/home.svg';
+import profileIcon from '/icons/profile.svg';
+import projectsIcon from '/icons/folder.svg';
+import contactIcon from '/icons/mail_outline.svg';
 
 const Navbar = () => {
 const location = useLocation();

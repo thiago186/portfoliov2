@@ -1,6 +1,6 @@
 import React from "react";
 
-import ellipse from "../../assets/ellipse.svg";
+import ellipse from "/ellipse.svg";
 
 const Ellipse = () => {
     return (
