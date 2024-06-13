@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import App from './App';
 import Home from './pages/HomePage';
 import AboutMePage from './pages/AboutMePage';
-import Projects from './pages/Projects';
+import ProjectsPage from './pages/ProjectsPage';
 import ContactMe from './pages/AboutMePage';
 import NotFound from './pages/NotFound';
 
@@ -17,7 +17,7 @@ const Main = () => (
     <Routes>
       <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/about-me" element={<AboutMePage />} />
       <Route path="/contact" element={<ContactMe />} />
       <Route path="*" element={<NotFound />} />
