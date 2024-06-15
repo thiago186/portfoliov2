@@ -4,6 +4,7 @@
     flex-direction: column;
     height: 440px;
     width: 320px;
+    z-index: 50;
     align-items: flex-start;
     border-radius: 12px;
     border: 2px solid var(--M3-sys-light-outline-variant, #C7C7BF);
