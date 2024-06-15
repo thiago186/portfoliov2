@@ -6,7 +6,7 @@ import App from './App';
 import Home from './pages/HomePage';
 import AboutMePage from './pages/AboutMePage';
 import ProjectsPage from './pages/ProjectsPage';
-import ContactMe from './pages/AboutMePage';
+import ContactMePage from './pages/ContactMePage';
 import NotFound from './pages/NotFound';
 
 import './styles/global.css';
@@ -19,7 +19,7 @@ const Main = () => (
       <Route path="/home" element={<Home />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/about-me" element={<AboutMePage />} />
-      <Route path="/contact" element={<ContactMe />} />
+      <Route path="/contact-me" element={<ContactMePage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>
