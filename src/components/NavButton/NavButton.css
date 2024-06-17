@@ -30,12 +30,9 @@
   border-radius: 32px;
 }
 
-.state-layer :hover{
-  scale: 1.4em;
-}
 
 .selected {
-  background: var(--M3-sys-light-secondary-container, #313131);
+  background: var(--M3-sys-light-secondary-container, #C1BFBE);
 }
 
 .navbutton-label {
@@ -48,7 +45,7 @@
   font-weight: 700;
   line-height: 16px; /* 133.333% */
   letter-spacing: 0.5px;
-  text-decoration: none; /* Add this line to remove the underline */
+  text-decoration: none;
 }
 
 .svg-navicon { 
@@ -58,6 +55,11 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transition: fill 0.3s;
+}
+
+.svg-navicon :hover {
+  fill: var(--M3-sys-light-on-surface, #c12323);
 }
 
 @media (max-width: 768px) {
