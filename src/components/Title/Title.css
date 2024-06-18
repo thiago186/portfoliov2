@@ -21,3 +21,8 @@
     font-weight: 400;
     line-height: 44px;
 }
+
+@media (max-height: 800px) {
+    .title-container {
+        margin-bottom: 25px;
+    }

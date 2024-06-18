@@ -60,27 +60,27 @@
 @media (max-width: 768px) {
 
     .pjpvline1 {
-        right: 5vh;
+        right: 2vh;
     }
 
     .pjpvline2 {
-        right: 10vh;
+        right: 6vh;
     }
 
     .pjpvline3 {
-        right: 15vh;
+        right: 10vh;
     }
 
     .pjphline1 {
-        margin-top: -10vh;
+        margin-top: -40vw;
     }
 
     .pjphline2 {
-        margin-top: -14vh;
+        margin-top: -30vw;
     }
 
     .pjphline3 {
-        margin-top: -18vh;
+        margin-top: -20vw;
     }
 
 }
